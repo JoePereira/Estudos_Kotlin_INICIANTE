@@ -2,9 +2,9 @@ package Arrays.DesafioComanda
 
 fun main(){
     // variaveis para controle de preço e quantidade de produtos
-    var price: Double = 0.0
-    var productsQTD: Int = 0
-    var products = arrayOf("Coxinha", "Cerveja")
+    var price = 0.0
+    var productsQTD = 0
+    val products = arrayOf("Coxinha", "Cerveja")
 
     // variaveis com os preços dos produtos
     val coxinha = 5.00
@@ -15,11 +15,11 @@ fun main(){
 
     do{
         println("Você gostaria de pedir coxinha ou cerveja? ")
-        var productInput = readln()
+        val productInput = readln()
 
 
         println("Informe a quantidade de ${productInput}s")
-        var productsQTDInput = readln().toInt()
+        val productsQTDInput = readln().toInt()
 
         when(productInput){
             "coxinha" -> qtdCoxinhas += productsQTDInput
@@ -28,8 +28,8 @@ fun main(){
         }
 
         println("Gostaria de pedir algo mais? (s/n)")
-        var continuar = readln()
-        var sair = when(continuar){
+        val continuar = readln()
+        val sair = when(continuar){
             "s" -> false
             "n" -> true
             else -> false
@@ -49,8 +49,5 @@ fun main(){
     println("Taxa 10%        R$ $taxa")
     println("-----------------------------")
     println("Conta Final     R$ ${price + taxa}")
-
-
-
 
 }
