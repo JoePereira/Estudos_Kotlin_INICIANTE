@@ -2,7 +2,7 @@ package Calculadora
 
 fun calculadora(operacao: String, numero1: Float, numero2: Float){
 
-    var resultado = when(operacao){
+    val resultado = when(operacao){
         "adição" -> "O resultado da soma de $numero1 + $numero2 é: ${numero1 + numero2}"
         "subtração" -> "O resultado da soma de $numero1 + $numero2 é: ${numero1 - numero2}"
         "multiplicação" -> "O valor da multiplicação entre $numero1 e $numero2 é: ${numero1 * numero2}"
@@ -22,20 +22,20 @@ fun main(){
 
     do{
         println("Informe a operação a ser feita (adição, subtração, multiplicação, divisão): ")
-        var operacao = readln()!!
+        val operacao = readln()
         println("Informe o primeiro numero (caso o valor não seja informado o valor será 0): ")
-        var numero1 = readln()?.toFloatOrNull() ?: 0f
+        val numero1 = readln().toFloatOrNull() ?: 0f
         println("Informe o segundo numero (caso o valor não seja informado o valor será 0): ")
-        var numero2 = readln()?.toFloatOrNull() ?: 0f
+        val numero2 = readln().toFloatOrNull() ?: 0f
         calculadora(operacao, numero1, numero2)
 
         println("Deseja fazer outra operação? (s/n)")
-        var continuar = readln()
-        var sairDoPrograma = when(continuar) {
+        val continuar = readln()
+        val sairDoPrograma = when(continuar) {
             "s" -> false
             "n" -> true
             else -> false
         }
-    }while (sairDoPrograma == false)
+    }while (!sairDoPrograma)
     println("Muito obrigado por utilizar nossa calculadora")
 }
