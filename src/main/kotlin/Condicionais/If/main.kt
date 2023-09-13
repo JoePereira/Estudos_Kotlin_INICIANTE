@@ -1,4 +1,4 @@
-package condicionais.If
+package Condicionais.If
 
 fun main() {
     val nomes = arrayOf("Joao", "Maria", "Jesus", "Leticia")

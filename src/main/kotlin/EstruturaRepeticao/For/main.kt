@@ -1,4 +1,4 @@
-package estruturaRepeticao.For
+package EstruturaRepeticao.For
 
 fun main(){
     val maxNum = 6

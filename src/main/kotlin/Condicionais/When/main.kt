@@ -1,4 +1,4 @@
-package condicionais.When
+package Condicionais.When
 
 fun main(){
     do{

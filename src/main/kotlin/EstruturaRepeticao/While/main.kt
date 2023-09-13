@@ -1,4 +1,4 @@
-package estruturaRepeticao.While
+package EstruturaRepeticao.While
 
 fun main(){
     var contador  = 0
